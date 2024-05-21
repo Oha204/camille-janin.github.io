@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+p {
+    font-size: 14.5px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(42, 42, 42);
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+.mode-switch {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fullPage {
+    height: calc(100vh - 50px); /* Adjust the height to account for the top bar */
+    width: 100%;
+    padding: 2rem 5rem;
+    display: flex;
+    gap: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bg-bloc-color {
+    background-color: rgb(42, 42, 42);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.bg-bloc-img {
+    background-image: url('images/champignon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.bloc1 {
+    flex: 2;
+}
+
+.bloc2 {
+    flex: 3;
+}
+
+.custom-mt {
+    margin-top: 15px;
+    /* text-align: justify; */
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.mt{
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.txt-right {
+    text-align: right;
+}
+.txt-right h1 {
+font-size: 45px;
+}
+
+.custom-txt {
+    font-size: 45px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.accordion-header .arrow {
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    display: none;
+    margin: 15px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+    display: block;
+}
+
+.icon-lang-container {
+    margin-top: 15px;
+}
+
+.img_icons {
+    height: auto;
+    width: 50px;
+}
+
+.img_icons:hover {
+    transform: translateY(-.25rem);
+    filter: drop-shadow(16px 16px 20px rgb(201, 22, 174)) invert(65%);
+  }
