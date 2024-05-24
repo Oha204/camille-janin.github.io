@@ -16,7 +16,7 @@
 <body>
     <div class="top-bar">
         <p><  Retour</p>
-        <div class="social-links">
+        <div>
             <a href="https://github.com/Oha204" target="_blank"><i class="fab fa-github social-icon github-icon"></i></a>
             <a href="https://www.linkedin.com/in/camille-janin/" target="_blank"><i class="fab fa-linkedin social-icon linkedin-icon"></i></a>
         </div>
@@ -85,7 +85,7 @@
         <div class="right">
             <div class="bg-bloc-color txt-right">
                 <h1>A la recherche d'une alternance en tant que </br><span id="typewriter">Développeuse Web</span></h1>
-                <div class="contact-details mt-3">
+                <div class="contact-details mt-3 mb-custom">
                     <p><i class="fa-solid fa-calendar-days"></i>du 09/2024 au 04/2026 (18 mois)</p>
                 </div>
             </div>
@@ -204,6 +204,7 @@
             </div>
             
         </div>
+        
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -258,25 +259,22 @@
         });
 
         document.addEventListener('DOMContentLoaded', function(){
-    // Attendez que la page soit complètement chargée pour déclencher l'animation
-    var span = document.getElementById('typewriter');
-    var text = span.textContent;
+            // Attendez que la page soit complètement chargée pour déclencher l'animation
+            var span = document.getElementById('typewriter');
+            var text = span.textContent;
 
-    // Effacer le texte initial pour permettre l'animation
-    span.textContent = '';
+            // Effacer le texte initial pour permettre l'animation
+            span.textContent = '';
 
-    // Écrire le texte lettre par lettre
-    for (var i = 0; i < text.length; i++) {
-        (function(i){
-            setTimeout(function(){
-                span.textContent += text[i];
-            }, 150 * i); // 150 ms de délai entre chaque lettre
-        })(i);
-    }
-});
-
+            // Écrire le texte lettre par lettre
+            for (var i = 0; i < text.length; i++) {
+                (function(i){
+                    setTimeout(function(){
+                        span.textContent += text[i];
+                    }, 150 * i); // 150 ms de délai entre chaque lettre
+                })(i);
+            }
+        });
     </script>
 </body>
 </html>
-
-                    
