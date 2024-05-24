@@ -141,6 +141,27 @@ p {
     font-size: 45px;
 }
 
+/* Titre recherche Alt */
+#typewriter {
+    overflow: hidden;
+    border-right: .15em solid rgb(111, 132, 216);
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+    /* Animation de dactylographie */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+    /* Animation du curseur clignotant */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(111, 132, 216) }
+}
+
 /* Accordions xp pro */
 .accordion-header-exp {
     cursor: pointer;
@@ -203,7 +224,7 @@ p {
 
 .date-item.active-date {
     background-color: rgb(111, 132, 216);
-    color: white; /* Assurez-vous que le texte reste lisible */
+    color: white;
 }
 
 .customTitleXp {
@@ -292,7 +313,7 @@ p {
 
 .img_icons:hover {
     transform: translateY(-0.25rem);
-    filter: drop-shadow(8px 8px 15px rgb(127, 250, 79)) invert(80%);
+    filter: drop-shadow(8px 8px 15px rgb(222, 212, 14)) invert(80%);
 }
 
 /* Responsive Media Queries */

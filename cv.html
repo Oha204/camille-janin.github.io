@@ -84,7 +84,7 @@
 
         <div class="right">
             <div class="bg-bloc-color txt-right">
-                <h1>A la recherche d'une alternance en tant que Développeuse Web</h1>
+                <h1>A la recherche d'une alternance en tant que </br><span id="typewriter">Développeuse Web</span></h1>
                 <div class="contact-details mt-3">
                     <p><i class="fa-solid fa-calendar-days"></i>du 09/2024 au 04/2026 (18 mois)</p>
                 </div>
@@ -256,6 +256,25 @@
                 item.classList.add('active-date');
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function(){
+    // Attendez que la page soit complètement chargée pour déclencher l'animation
+    var span = document.getElementById('typewriter');
+    var text = span.textContent;
+
+    // Effacer le texte initial pour permettre l'animation
+    span.textContent = '';
+
+    // Écrire le texte lettre par lettre
+    for (var i = 0; i < text.length; i++) {
+        (function(i){
+            setTimeout(function(){
+                span.textContent += text[i];
+            }, 150 * i); // 150 ms de délai entre chaque lettre
+        })(i);
+    }
+});
+
     </script>
 </body>
 </html>
