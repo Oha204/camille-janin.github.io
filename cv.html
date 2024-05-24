@@ -96,19 +96,51 @@
                         <span class="arrow">▼</span>
                     </h2>
                     <div class="accordion-content-exp">
-                        <div>
-                            <div>
-                                <p>11/2023 au 05/2024</p>
-                                <p>Stagiaire Développeur Web (6 mois)</p>
-                                <p>Huttopia/Huttosoft - LYON (2e)</p>
+                        <div class="timeline">
+                            <div class="dates">
+                                <div class="date-item mb-2" data-content="content1">
+                                    <p>2023 / 2024</p>
+                                </div>
+                                <div class="date-item mb-2" data-content="content2">
+                                    <p>2021 / 2022</p>
+                                </div>
+                                <div class="date-item" data-content="content3">
+                                    <p>2019 / 2021</p>
+                                </div>
                             </div>
-                            <div> 
-                                <p>◼ Système de ticket (Jira)</p>
-                                <p>◼ Wordpress (WPML - ACF)</p>
-                                <p>◼ HTML - CSS - SCSS</p>
-                                <p>◼ PHP - JS - Twig</p>
-                                <p>◼  Symfony - EasyAdmin - Bootstrap - SQL</p>
-                                <p>◼ Linux</p>
+                            <div class="contents">
+                                <div id="content1" class="content active">
+                                    <p class="font-w customTitleXp">Développeuse FullStack (Stage - 6 mois)</p>
+                                    <p class="font-s mt-xs">Huttopia/Huttosoft - LYON (2e)</p>
+                                    <div class="customContentXp">
+                                        <p>◼ Système de ticket (Jira)</p>
+                                        <p>◼ Wordpress (WPML - ACF)</p>
+                                        <p>◼ HTML - CSS - SCSS</p>
+                                        <p>◼ PHP - JS - Twig</p>
+                                        <p>◼ Symfony - EasyAdmin - Bootstrap - SQL</p>
+                                        <p>◼ Linux</p>
+                                    </div>
+                                </div>
+                                <div id="content2" class="content">
+                                    <p class="font-w customTitleXp">Community Manager (Alternance - 1 an)</p>
+                                    <p class="font-s mt-xs">DIGITAL COVER - LYON 9e</p>
+                                    <div class="customContentXp">
+                                        <p>◼ Social média</p>
+                                        <p>◼ Référencement naturel (SEO)</p>
+                                        <p>◼ Gestion de projet</p>
+                                        <p>◼ Relation client</p>
+                                    </div>
+                                </div>
+                                <div id="content3" class="content">
+                                    <p class="font-w customTitleXp">Responsable de communication et de publicité - Infographiste & Webdesigner (Alternance - 2 ans)</p>
+                                    <p class="font-s mt-xs">OUVRY SAS - Système de protection NRBC - LYON 9e</p>
+                                    <div class="customContentXp">
+                                        <p>◼ Gestion de deux sites web</p>
+                                        <p>◼ Gestion réseaux sociaux</p>
+                                        <p>◼ Graphisme</p>
+                                        <p>◼ Gestion de projet communication/marketing digital</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,6 +222,10 @@
             });
         });
 
+        const defaultContent = document.getElementById('content1');
+        const defaultDateItem = document.querySelector('.date-item[data-content="content1"]');
+        defaultDateItem.classList.add('active-date');
+
         document.addEventListener('DOMContentLoaded', function () {
             const formationHeader = document.querySelector('.accordion-header-form');
             const formationContent = document.querySelector('.accordion-content-form');
@@ -205,33 +241,23 @@
                 }
             });
         });
+
+        document.querySelectorAll('.date-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                const contentId = item.getAttribute('data-content');
+                document.getElementById(contentId).classList.add('active');
+
+                document.querySelectorAll('.date-item').forEach(item => {
+                    item.classList.remove('active-date');
+                });
+                item.classList.add('active-date');
+            });
+        });
     </script>
 </body>
 </html>
 
- <!-- <div>
-                            <div>
-                                <p>10/2021 au 10/2022</p>
-                                <p>Community Manager - Alternance (1 an)</p>
-                                <p>DIGITAL COVER - LYON 9e</p>
-                            </div>
-                            <div> 
-                                <p>◼ Social média</p>
-                                <p>◼ Référencement naturel (SEO)</p>
-                                <p>◼ Gestion de projet</p>
-                                <p>◼ Relation client</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <p>09/2019 au 08/2021</p>
-                                <p>Responsable de communication et de publicité - Infographiste & Webdesigner - Alternance (2 ans)</p>
-                                <p>OUVRY SAS - Système de protection NRBC - LYON 9e</p>
-                            </div>
-                            <div> 
-                                <p>◼ Gestion de deux sites web</p>
-                                <p>◼ Gestion réseaux sociaux</p>
-                                <p>◼ Graphisme</p>
-                                <p>◼ Gestion de projet communication/marketing digital</p>
-                            </div>
-                        </div> -->
+                    

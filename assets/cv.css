@@ -39,6 +39,10 @@ p {
     margin-right: 40px;
 }
 
+.mb-2 {
+    margin-bottom: 15px;
+}
+
 p {
     font-size: 15px;
 }
@@ -159,6 +163,60 @@ p {
 
 .accordion-content-exp.open {
     display: block;
+}
+
+/* Contenu accordéons xp pro */
+.timeline {
+    display: flex;
+    margin-top: 18px;
+}
+
+.dates {
+    border-right: 2px solid #cccccc6f;
+    padding-right: 40px;
+    width: calc(100% - 380px);
+}
+
+.content {
+    display: none;
+    width: 380px;
+}
+
+.contents {
+    margin-left: 30px;
+}
+
+.content.active {
+    display: block;
+}
+.date-item {
+    background-color: rgb(2, 2, 20);
+    padding: 10px ;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+    cursor: pointer;
+}
+.date-item:hover {
+    text-decoration: none;
+}
+
+.date-item.active-date {
+    background-color: rgb(111, 132, 216);
+    color: white; /* Assurez-vous que le texte reste lisible */
+}
+
+.customTitleXp {
+    font-size: 19px;
+}
+
+.customContentXp {
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.customContentXp p {
+    font-size: 13px;
 }
 
 /* accordion formation */
