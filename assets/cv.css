@@ -94,11 +94,6 @@ p { font-size: 15px; margin: 0;}
     margin-bottom: 20px;
 }
 
-p.customColor {
-    color: inherit;
-    text-decoration: none;
-}
-
 .contact-details i {
     margin-right: 10px;
 }
