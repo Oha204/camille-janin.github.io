@@ -91,7 +91,11 @@ p { font-size: 15px; margin: 0;}
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+}
+
+.container-contact p {
+    text-decoration: none;
 }
 
 .contact-details i {
@@ -302,6 +306,11 @@ p { font-size: 15px; margin: 0;}
 }
 
 /* Responsive Media Queries */
+@media (max-width: 400px) {
+    .customContentXp {
+        margin-left: 20px;
+    }
+}
 
 @media (max-width: 480px) {
     .fullPage {
@@ -382,7 +391,7 @@ p { font-size: 15px; margin: 0;}
 @media (max-width: 880px) {
     .fullPage {
         flex-direction: column;
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
 
     .flex {
@@ -393,8 +402,6 @@ p { font-size: 15px; margin: 0;}
         flex-direction: column;
         gap: 10px;
     }
-
-    
 
     .txt-right h1, .custom-txt {
         font-size: 30px;
