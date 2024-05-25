@@ -94,8 +94,8 @@ p { font-size: 15px; margin: 0;}
     margin-bottom: 20px;
 }
 
-.container-contact p {
-    text-decoration: none;
+.customColor {
+   color: white;
 }
 
 .contact-details i {
