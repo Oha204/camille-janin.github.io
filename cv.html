@@ -7,7 +7,7 @@
     <title>CV Camille Janin</title>
     
     <link rel="stylesheet" href="assets/cv.css"/>
-    <script src="script.js"></script>
+    
     
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -209,97 +209,9 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const experienceHeader = document.querySelector('.accordion-header-exp');
-            const experienceContent = document.querySelector('.accordion-content-exp');
-            const experienceArrow = document.querySelector('.accordion-header-exp .arrow');
 
-            experienceHeader.addEventListener('click', function () {
-                if (experienceContent.style.display === 'block' || experienceContent.style.display === '') {
-                    experienceContent.style.display = 'none';
-                    experienceArrow.style.transform = 'rotate(0deg)';
-                } else {
-                    experienceContent.style.display = 'block';
-                    experienceArrow.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-
-        const defaultContent = document.getElementById('content1');
-        const defaultDateItem = document.querySelector('.date-item[data-content="content1"]');
-        defaultDateItem.classList.add('active-date');
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const formationHeader = document.querySelector('.accordion-header-form');
-            const formationContent = document.querySelector('.accordion-content-form');
-            const formationArrow = document.querySelector('.accordion-header-form .arrow');
-
-            formationHeader.addEventListener('click', function () {
-                if (formationContent.style.display === 'block' || formationContent.style.display === '') {
-                    formationContent.style.display = 'none';
-                    formationArrow.style.transform = 'rotate(0deg)';
-                } else {
-                    formationContent.style.display = 'block';
-                    formationArrow.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-
-        document.querySelectorAll('.date-item').forEach(item => {
-            item.addEventListener('click', () => {
-                document.querySelectorAll('.content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                const contentId = item.getAttribute('data-content');
-                document.getElementById(contentId).classList.add('active');
-
-                document.querySelectorAll('.date-item').forEach(item => {
-                    item.classList.remove('active-date');
-                });
-                item.classList.add('active-date');
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function(){
-            // Attendez que la page soit complètement chargée pour déclencher l'animation
-            var span = document.getElementById('typewriter');
-            var text = span.textContent;
-
-            // Effacer le texte initial pour permettre l'animation
-            span.textContent = '';
-
-            // Écrire le texte lettre par lettre
-            for (var i = 0; i < text.length; i++) {
-                (function(i){
-                    setTimeout(function(){
-                        span.textContent += text[i];
-                    }, 150 * i); // 150 ms de délai entre chaque lettre
-                })(i);
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', function(){
-            // Attendez que la page soit complètement chargée pour déclencher l'animation
-            var span = document.getElementById('typewriterMobile');
-            var text = span.textContent;
-
-            // Effacer le texte initial pour permettre l'animation
-            span.textContent = '';
-
-            // Écrire le texte lettre par lettre
-            for (var i = 0; i < text.length; i++) {
-                (function(i){
-                    setTimeout(function(){
-                        span.textContent += text[i];
-                    }, 150 * i); // 150 ms de délai entre chaque lettre
-                })(i);
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
