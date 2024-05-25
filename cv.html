@@ -23,7 +23,14 @@
     </div>
     <div class="fullPage">
         <div class="left">
+            
             <div class="flex">
+                <div class="bg-bloc-color txt-right search-alternance-small">
+                    <h1>À la recherche d'une alternance en tant que </br><span id="typewriterMobile">Développeuse Web</span></h1>
+                    <div class="contact-details mb-custom">
+                        <p><i class="fa-solid fa-calendar-days"></i>du 09/2024 au 04/2026 (18 mois)</p>
+                    </div>
+                </div>
                 <div class="bg-bloc-img bloc1">
                     
                 </div>
@@ -42,10 +49,10 @@
                     
                 </div>
             </div>
-            <div class="bg-bloc-color">
-                <h2>Compétences</h2>
-                <div class="icon-lang-container">
-                    <div class="mr-3">
+            <div class="bg-bloc-color customMobile">
+                <h2 class="custom-txt-mob">Compétences</h2>
+                <div class="icon-lang-container iconCustMob">
+                    <div class="mr-3 marginCustomMob">
                         <div class="mt-2">
                             <img src="assets/images/icons/html.png" title="HTML 5" class="img_icons">
                             <img src="assets/images/icons/css.png" title="CSS" class="img_icons">
@@ -59,7 +66,7 @@
                             <img src="assets/images/icons/react.png" title="React" class="img_icons">
                         </div>
                     </div>
-                    <div class="mr-3">
+                    <div class="mr-3 marginCustomMob">
                         <div class="mt-2">
                             <img src="assets/images/icons/php.png" title="PHP" class="img_icons">
                             <img src="assets/images/icons/symfony.png" title="Symfony" class="img_icons">
@@ -83,13 +90,13 @@
         </div>
 
         <div class="right">
-            <div class="bg-bloc-color txt-right">
-                <h1>A la recherche d'une alternance en tant que </br><span id="typewriter">Développeuse Web</span></h1>
+            <div class="bg-bloc-color txt-right search-alternance-large">
+                <h1>À la recherche d'une alternance en tant que </br><span id="typewriter">Développeuse Web</span></h1>
                 <div class="contact-details mt-3 mb-custom">
                     <p><i class="fa-solid fa-calendar-days"></i>du 09/2024 au 04/2026 (18 mois)</p>
                 </div>
             </div>
-            <div class="bg-bloc-color">
+            <div class="bg-bloc-color customMobXp">
                 <div class="accordion">
                     <h2 class="accordion-header-exp">
                         Expériences Professionnelles 
@@ -97,14 +104,14 @@
                     </h2>
                     <div class="accordion-content-exp">
                         <div class="timeline">
-                            <div class="dates">
+                            <div class="dates customDateMob">
                                 <div class="date-item mb-2" data-content="content1">
                                     <p>2023 / 2024</p>
                                 </div>
                                 <div class="date-item mb-2" data-content="content2">
                                     <p>2021 / 2022</p>
                                 </div>
-                                <div class="date-item" data-content="content3">
+                                <div class="date-item mb-2" data-content="content3">
                                     <p>2019 / 2021</p>
                                 </div>
                             </div>
@@ -146,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-bloc-color">
+            <div class="bg-bloc-color customFormMob">
                 <div class="accordion">
                     <h2 class="accordion-header-form">
                         Formations 
@@ -261,6 +268,24 @@
         document.addEventListener('DOMContentLoaded', function(){
             // Attendez que la page soit complètement chargée pour déclencher l'animation
             var span = document.getElementById('typewriter');
+            var text = span.textContent;
+
+            // Effacer le texte initial pour permettre l'animation
+            span.textContent = '';
+
+            // Écrire le texte lettre par lettre
+            for (var i = 0; i < text.length; i++) {
+                (function(i){
+                    setTimeout(function(){
+                        span.textContent += text[i];
+                    }, 150 * i); // 150 ms de délai entre chaque lettre
+                })(i);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function(){
+            // Attendez que la page soit complètement chargée pour déclencher l'animation
+            var span = document.getElementById('typewriterMobile');
             var text = span.textContent;
 
             // Effacer le texte initial pour permettre l'animation
