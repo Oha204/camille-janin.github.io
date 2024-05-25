@@ -307,9 +307,9 @@ p { font-size: 15px; margin: 0;}
 
 /* Responsive Media Queries */
 @media (max-width: 400px) {
-    .customContentXp {
+    /* .customContentXp {
         margin-left: 20px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -446,6 +446,10 @@ p { font-size: 15px; margin: 0;}
 
     .iconCustMob {
         margin-top: 10px;
+    }
+
+    .customContentXp {
+        margin-left: 20px;
     }
 }
 
