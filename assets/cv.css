@@ -32,7 +32,7 @@ p { font-size: 15px; margin: 0;}
 }
 
 .bg-bloc-color {
-    background-color: rgb(55, 55, 70);
+    background-color: rgba(67, 67, 88, 0.733);
     padding: 20px 40px;
     border-radius: 8px;
 }
@@ -43,7 +43,7 @@ p { font-size: 15px; margin: 0;}
     align-items: center;
     justify-content: space-between;
     padding: 13px 25px;
-    background-color: rgb(43, 43, 58);
+    background-color: rgba(67, 67, 88, 0.733);
 }
 
 .top-bar p {
