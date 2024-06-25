@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <title>Clean Up' - Votre pressing de qualité</title>
     
@@ -31,7 +31,7 @@
 
     <div>
         <div class="blocBandeau">
-            <img class="bandeau" src="../assets/images/projets/CoteRecette/prez.jpg" alt="">
+            <img class="bandeau" src="../assets/images/projets/cleanupFront/v3.png" alt="">
         </div>
         <div class="p-3 d-flex justify-content-center">
             <div class="arrow bounce" id="scrollArrow"></div>
@@ -47,25 +47,23 @@
                     <h3 class="titleAnimG-D-1 titleh3-2">DESCRIPTIF</h3>
                 </div>
                 <div class="mt-5">
-                    <p>Développement d'un site de recette de cuisine avec une BDD.
-                    </p>
+                    <p>Projet de fin d'année - nous avons eu pour mission de réaliser une interface pour un client fictif (entreprise pressing). Nous avions à disposition un cahier des charges avec des indications et des contraintes. 
+                    <p>Ce projet dispose de 2 parties :</p>
                     <div>
-                        <p>Contenu partie client : </p>
+                        <p>La partie application (NG_Pressing) qui permettra aux clients de : </p>
                         <div class="ml">
-                            <li>HomePage</li>
-                            <li>Nos recettes : liste des recettes disponible avec posibilité de filtrer par catégorie.</li>
-                            <li>Recette détail : détails de la recette sélectionnée</li>
-                            <li>Système de connexion au Backoffice</li>
-                            <li>Message validation connexion ou inscription</li>
+                            <li>Pouvoir découvrir l’entreprise par le biais de diverses pages,</li>
+                            <li>D’avoir accès à leur espace client lorsqu’ils se connectent,</li>
+                            <li>De choisir leurs articles, la quantité, le service associé ainsi que de sélectionner une date pour déposer leur commande au pressing et de pouvoir payer en ligne en toute sécurité.</li>
                         </div>
                     </div>
                     <div class="mt-3">
-                        <p>Partie administrative : </p>
+                        <p>Et la partie administration (SF_Pressing) :</p> 
+                        <!-- <a href="https://oha204.github.io/camille-janin.github.io/projets/cleanupBack.html">(SF_Pressing)</a> -->
                         <div class="ml">
-                            <li>Recette active : liste des recettes actives et donc disponible pour nos utilisateurs</li>
-                            <li>Recette desactive : liste des recettes désactivées et donc indisponible pour nos utilisateurs</li>
-                            <li>Add New : formulaire pour ajouter une nouvelle recette à notre base de données et dans notre partie client</li>
-                            <li>Recette détail : détails de la recette sélectionnée</li>
+                            <li>Accessible seulement aux directeurs et leurs employés,</li>
+                            <li>Permettra la gestion de toutes les informations disponibles sur le site en fonction des droits attribués à chaque compte,</li>
+                            <li>Ainsi que l’assignation des tâches/commandes aux employés.</li>
                         </div>
                     </div>
                 </div>
@@ -79,16 +77,16 @@
                 
                 <div class="custmarg">
                     <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-4 mb-4">
+                        <div class="col-5 mb-4">
                             <div class="icon-item d-flex flex-column justify-content-center align-items-center p-3">
-                                <img src="../assets/images/icons/php.png" class="img_icons ">
-                                <h4 class="mt-2 mb-0 txtopacity">PHP</h4>
+                                <img src="../assets/images/icons/angular.png" class="img_icons ">
+                                <h4 class="mt-2 mb-0 txtopacity">ANGULAR</h4>
                             </div>
                         </div>
-                        <div class="col mb-4" >
+                        <div class="col mb-4">
                             <div class="icon-item d-flex flex-column justify-content-center align-items-center p-3">
-                                <img src="../assets/images/icons/javascript.png" class="img_icons ">
-                                <h4 class="mt-2 mb-0 txtopacity">JAVASCRIPT</h4>
+                                <img src="../assets/images/icons/typescript.png" class="img_icons ">
+                                <h4 class="mt-2 mb-0 txtopacity">TYPESCRIPT</h4>
                             </div>
                         </div>
                     </div>
@@ -113,14 +111,9 @@
                                 <h4 class="mt-2 mb-0 txtopacity">BOOTSTRAP</h4>
                             </div>
                         </div>
-                        <div class="col-4 mb-4">
-                            <div class="icon-item d-flex flex-column justify-content-center align-items-center p-3">
-                                <img src="../assets/images/icons/mysql.png" class="img_icons">
-                                <h4 class="mt-2 mb-0 txtopacity">SQL</h4>
-                            </div>
-                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -146,25 +139,43 @@
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col mb-4 d-flex justify-content-center align-items-center">
                         <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalHome">
-                            <img src="../assets/images/projets/CoteRecette/home.png" class="img-fluid sizeimg" alt="Image 1">
+                            <img src="../assets/images/projets/cleanupFront/home.png" class="img-fluid sizeimg" alt="Image 1">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <div class="col mb-4 d-flex justify-content-center align-items-center">
-                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalListe">
-                            <img src="../assets/images/projets/CoteRecette/listeRecette.png" class="img-fluid sizeimg" alt="Image 2">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalService">
+                            <img src="../assets/images/projets/cleanupFront/prestations.png" class="img-fluid sizeimg" alt="Image 2">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <div class="col mb-4 d-flex justify-content-center align-items-center">
-                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
-                            <img src="../assets/images/projets/CoteRecette/LoginForm.png" class="img-fluid sizeimg" alt="Image 3">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalAbout">
+                            <img src="../assets/images/projets/cleanupFront/about.png" class="img-fluid sizeimg" alt="Image 3">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <div class="col mb-4 d-flex justify-content-center align-items-center">
-                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalBackOff">
-                            <img src="../assets/images/projets/CoteRecette/Backoffice.png" class="img-fluid sizeimg" alt="Image 4">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalContact">
+                            <img src="../assets/images/projets/cleanupFront/contact.png" class="img-fluid sizeimg" alt="Image 4">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center align-items-center">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalLoginInscription">
+                            <img src="../assets/images/projets/cleanupFront/login.png" class="img-fluid sizeimg" alt="Image 4">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center align-items-center">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalOrder">
+                            <img src="../assets/images/projets/cleanupFront/order.png" class="img-fluid sizeimg" alt="Image 4">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center align-items-center">
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#modalEspaceClient">
+                            <img src="../assets/images/projets/cleanupFront/espaceClient.png" class="img-fluid sizeimg" alt="Image 4">
                             <div class="overlay"></div>
                         </div>
                     </div>
@@ -172,7 +183,6 @@
             </div>
         </div>
     </div>
-    
     
     <!-- Modal Home -->
     <div class="modal fade" id="modalHome" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -185,16 +195,76 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8 d-flex justify-content-center align-items-center">
-                            <img src="../assets/images/projets/CoteRecette/homeFull.png" class="img-fluid">
+                            <img src="../assets/images/projets/cleanupFront/homeFull.png" class="img-fluid">
                         </div>
                         <div class="col-md-4 text-dark custTxtModal text-white">
                             <h5>DESCRIPTIF</h5>
+                            <p>Présentation de :</p>
+                                <li>l'entreprise,</li>
+                                <li>du parcours d'achat,</li>
+                                <li>des services disponibles,</li>
+                                <li>des coordonnées et des horaires d'ouverture,</li>
+                                <li>et des avis clients.</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal page prestation -->
+    <div class="modal fade" id="modalService" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content " id="bgColorModal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">PAGE PRESTATIONS & TARIFS</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <img src="../assets/images/projets/cleanupFront/prestationsFull.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 text-dark custTxtModal text-white">
+                            <h5>DESCRIPTIF</h5>
+                            <p>Les prestations disponibles :</p>
+                            <li>Les services affichés sont appelés de manière dynamique via la base de données. Ainsi, si une prestation est ajoutée ou supprimée, alors ce bloc se mettra à jour automatiquement.</li>
+                        </br>
+                            <p>Les prix chez Clean Up' :</p>
+                            <li>Récupération en base de données et affichage des prix des services, ainsi que des suppléments liés aux articles et aux matières.</li>
+                        </br>
+                            <p>Le simulateur :</p>
+                            <li>Permets aux utilisateurs de sélectionner un service, le type d'article concerné, ainsi que sa quantité, et la matière. En cliquant sur le bouton "Simuler", le prix total de la prestation s'affiche.</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal About -->
+    <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content " id="bgColorModal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">PRESENTATION CLEAN UP'</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <img src="../assets/images/projets/cleanupFront/aboutFull.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 text-dark custTxtModal text-white">
+                            <h5>DESCRIPTIF</h5>
+                            <p>Partie "Qui sommes-nous ?" :</p>
                             <li>
-                                Récupération et présentation des 4 dernières recettes ajoutées en base de donnée, avec possibilité de se rendre sur le détail de la recette en cliquant sur le bouton "Voir plus". 
+                                Présentation de Clean Up'. 
                             </li>
                         </br>
+                            <p>Partie "Valeurs et engagements" :</p>
                             <li>
-                                Formulaire d'inscription à notre newsletter. Les emails sont stockés dans un fichier texte.    
+                                Présentation des valeurs et des engagements de l'entreprise.
                             </li>
                         </div>
                     </div>
@@ -203,28 +273,104 @@
         </div>
     </div>
 
-    <!-- Modal Liste recette -->
-    <div class="modal fade" id="modalListe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal page contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl ">
             <div class="modal-content " id="bgColorModal">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">LISTE RECETTES</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULAIRE DE CONTACT</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <img src="../assets/images/projets/cleanupFront/contactFull.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal login/inscription -->
+<div class="modal fade" id="modalLoginInscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content" id="bgColorModal">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULAIRE DE CONNEXION / INSCRIPTION</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="d-flex flex-column">
+                            <img src="../assets/images/projets/cleanupFront/inscription.png" class="img-fluid mb-3">
+                            <img src="../assets/images/projets/cleanupFront/loginFull.png" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-dark custTxtModal text-white">
+                        <h5>DESCRIPTIF</h5>
+                        <p>Formulaire d'INSCRIPTION :</p>
+                        <p>Certaines conditions sont nécessaires pour valider le formulaire :</p>
+                        <ul>
+                            <li>Le format email est obligatoire (regex),</li>
+                            <li>Le mot de passe doit contenir X caractères minimum,</li>
+                            <li>Le mot de passe et la vérification du mot de passe doivent être identiques.</li>
+                        </ul>
+                        <p>Lorsque l'inscription est prise en compte et envoyée en base de données, le mot de passe est hashé.</p>
+                        <p>Formulaire de CONNEXION :</p>
+                        <ul>
+                            <li>Après l'inscription, notre utilisateur peut se connecter. Un jeton d'authentification lui sera attribué.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal Commande -->
+    <div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content " id="bgColorModal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">PROCESSUS DE COMMANDE</h1>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center">
-                            <img src="../assets/images/projets/CoteRecette/listeRecetteFull.png" class="img-fluid">
+                        <div class="col-md-8">
+                            <div class="d-flex flex-column">
+                                <img src="../assets/images/projets/cleanupFront/orderFull.png" class="img-fluid mb-2">
+                                <img src="../assets/images/projets/cleanupFront/orderDateFull.png" class="img-fluid mb-2">
+                                <img src="../assets/images/projets/cleanupFront/orderUserFull.png" class="img-fluid mb-2">
+                                <img src="../assets/images/projets/cleanupFront/orderPaiementFull.png" class="img-fluid mb-2">
+                                <img src="../assets/images/projets/cleanupFront/orderValidFull.png" class="img-fluid mb-2">
+                            </div>
                         </div>
                         <div class="col-md-4 text-dark custTxtModal text-white">
                             <h5>DESCRIPTIF</h5>
-                            <li>
-                                Récupération et présentation de l'ensemble des recettes active disponible en base de donnée, avec possibilité de se rendre sur le détail de la recette en cliquant sur le bouton "Voir plus". 
-                            </li>
-                        </br>
-                            <li>
-                                Possibilité de filtrer les recettes par catégorie. </br> (Plats chaud, Plats froid, Entrée et Dessert)    
-                            </li>
+                            <p>Étape 1 - Passez votre commande :</p>
+                            <ul>
+                                <li>L'utilisateur sélectionne ses besoins (produit, quantité, matière, service et un commentaire) et les ajoutes à son panier.</li>
+                                <li>L'ajout au panier met à jour le montant HT et TTC de la commande.</li>
+                            </ul>
+                            <p>Étape 2 - Choisir une date de dépôt :</p>
+                            <ul>
+                                <li>Cette dernière s'enregistre et s'affiche dans le récapitulatif de la commande.</li>
+                            </ul>
+                            <p>Étape 3 - S'identifier :</p>
+                            <ul>
+                                <li>Validation des informations personnelles (nom complet, adresses, numéro de téléphone et adresse mail).</li>
+                            </ul>
+                            <p>Étape 4 - Moyen de paiement :</p>
+                            <ul>
+                                <li>Réglement avec le moyen de paiement enregistrer dans l'espace client.</li>
+                                <li>Ou possibilité de régler avec une autre carte bancaire ou un compte Paypal.</li>
+                            </ul>
+                            <p>Étape 5 - Validation de la commande :</p>
+                            <ul>
+                                <li>L'utilisateur peut télécharger son ticket de prestation ainsi que le récapitulatif de cette dernière.</li>
+                            </ul>
+                            <p>Suite à la vallidation, la commande est envoyé en base de donnée et affichés dans l'outil administratifs des employés afin de la prendre en charge.</p>
                         </div>
                     </div>
                 </div>
@@ -232,78 +378,41 @@
         </div>
     </div>
 
-    <!-- Modal Formulaire de login -->
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content " id="bgColorModal">
+    <!-- Modal Compte client -->
+    <div class="modal fade" id="modalEspaceClient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content" id="bgColorModal">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULAIRE CONNEXION & INSCRIPTION</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ESPACE CLIENT</h1>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center">
-                            <img src="../assets/images/projets/CoteRecette/LoginForm.png" class="img-fluid">
+                        <div class="col-md-8">
+                            <div class="d-flex flex-column">
+                                <img src="../assets/images/projets/cleanupFront/espaceClientDashFull.png" class="img-fluid mb-3">
+                                <img src="../assets/images/projets/cleanupFront/espaceClientFull.png" class="img-fluid mb-3">
+                                <img src="../assets/images/projets/cleanupFront/espaceClientCBFull.png" class="img-fluid mb-3">
+                                <img src="../assets/images/projets/cleanupFront/espaceClientOrderFull.png" class="img-fluid mb-3">
+                                <img src="../assets/images/projets/cleanupFront/espaceClientOrderDetailFull.png" class="img-fluid mb-3">
+                            </div>
                         </div>
                         <div class="col-md-4 text-dark custTxtModal text-white">
                             <h5>DESCRIPTIF</h5>
-                            <p class="">Formulaire de connexion :</p>
-                            <li>
-                                Pour le moment seul l'administration est disponible. La partie "espace client" est en cours de création. 
-                            </li>
-                            <li>
-                                Après son authentification, l'admin est redirigé vers l'administration de son site de recette et démarre une session.
-                            </li>
-                        </br>
-                            <p>Formulaire d'inscription :</p>
-
-                            <li>
-                                Le formulaire demande certaines conditions afin de pouvoir être validé : le format email est obligatoire & le mot de passe doit contenir minimum 8 caractères.
-                            </li>
-                            
-                            <li>
-                                Lorsque le formulaire est validé, les données sont envoyé en BDD et le mot de passe est hashé.
-                            </li>
-                            <li>
-                                L'utilisateur est ensuite redirigé vers une page de confirmation d'inscription. 
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal BackOffice -->
-    <div class="modal fade" id="modalBackOff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content " id="bgColorModal">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">BACKOFFICE - ADMINISTRATION</h1>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center">
-                            <img src="../assets/images/projets/CoteRecette/BackofficeFull.png" class="img-fluid">
-                        </div>
-                        <div class="col-md-4 custTxtModal text-white">
-                            <h5>DESCRIPTIF</h5>
-                            <p>Menu :</p>
-                                <li>
-                                    Add New : Possibilité d'ajouter une nouvelle recette à notre base de donnée/liste via un formulaire.
-                                </li>
-                                <li>
-                                    Retour Site : redirection vers la homepage. 
-                                </li>
-                                <li>
-                                    Déconnexion : fermeture de la session. l'utilisateur est déconnecté et redirigé vers la homepage.
-                                </li>
-                            </br>
-                            <p>Page Liste recettes active:</p>
-                                <li>
-                                    Possibilité de modifier, supprimer ou désactiver (archiver) une recette. 
-                                </li>
+                            <p>Tableau de bord :</p>
+                            <ul>
+                                <li>Récapitulatif des informations personnelles</li>
+                                <li>Récapitulatif du nombre de commande en cours</li>
+                            </ul>
+                            <p>Mon profil :</p>
+                            <ul>
+                                <li>Informations personnelles - modification possible</li>
+                                <li>Les moyens de paiements - add/delete possible</li>
+                            </ul>
+                            <p>Mes commandes :</p>
+                            <ul>
+                                <li>Liste de l'ensemble des commandes en cours et passées + détail</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -312,24 +421,14 @@
     </div>
     
     <script>
-        // Get the arrow element
         const scrollArrow = document.getElementById('scrollArrow');
-    
-        // Get the section where you want the arrow to appear
         const targetSection = document.querySelector('.container.mt-4');
     
-        // Function to handle scroll event
         window.addEventListener('scroll', function() {
-            // Get the bottom position of the target section relative to the viewport
             const targetSectionBottom = targetSection.getBoundingClientRect().bottom;
-    
-            // Get the current scroll position
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-            // Calculate the threshold
             const threshold = targetSectionBottom - (targetSection.offsetHeight / 2);
     
-            // Check if the top of the viewport has passed the threshold
             if (scrollTop <= threshold) {
                 scrollArrow.style.opacity = '1';
             } else {
