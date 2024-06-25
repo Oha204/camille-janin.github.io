@@ -54,11 +54,11 @@
                     </div>
                     <div class="mt-3">
                         <p>Et la partie administration (SF_Pressing) :</p>
-                        <div class="ml">
+                        <ul>
                             <li>Accessible seulement aux directeurs et leurs employés,</li>
                             <li>Permettra la gestion de toutes les informations disponibles sur le site en fonction des droits attribués à chaque compte,</li>
                             <li>Ainsi que l’assignation des tâches/commandes aux employés.</li>
-                        </div>
+                        </ul>
                     </br>
                         <p>API Platform - EasyAdmin - fixtures / BDD</p>
                     </div>
@@ -220,22 +220,28 @@
                     <div class="custTxtModal text-white mb-2">
                         <h5>DESCRIPTIF</h5>
                         <p>Partie "Commande" :</p>
-                        <li>Chaque commande est liée à une ou plusieurs ligne(s) de commande.</li>
-                        <li>Un employé peut être assigné à une commande</li>
-                        <li>Le prix total HT et TTC de l'ensemble des lignes de commande sont récupérés et affichés</li>
-                        <li>La modification, la suppression, l'ajout et la lecture sont possibles (CRUD)</li>
+                        <ul>
+                            <li>Chaque commande est liée à une ou plusieurs ligne(s) de commande.</li>
+                            <li>Un employé peut être assigné à une commande</li>
+                            <li>Le prix total HT et TTC de l'ensemble des lignes de commande sont récupérés et affichés</li>
+                            <li>La modification, la suppression, l'ajout et la lecture sont possibles (CRUD)</li>
+                        </ul>
                     </br>
                         <p>Partie "Ligne de commande" :</p>
-                        <li>Chaque ligne de commande est lié à une commande</li>
-                        <li>Une ligne de commande contient :
-                            <li>un service et son prix HT,</li>
-                            <li>un article et son prix HT,</li>
-                            <li>la matière de l'article et son prix HT en supplément,</li>
-                            <li>la quantité d'articles sélectionnés</li>
-                            <li>le prix total HT = (article*quantité)+service</li>
-                            <li>et la commande à laquelle elle est associée</li>
-                        </li>
-                        <li>La modification, la suppression et l'ajout sont possibles.</li>
+                        <ul>
+                            <li>Chaque ligne de commande est lié à une commande</li>
+                            <li>Une ligne de commande contient :
+                                <ul>
+                                    <li>un service et son prix HT,</li>
+                                    <li>un article et son prix HT,</li>
+                                    <li>la matière de l'article et son prix HT en supplément,</li>
+                                    <li>la quantité d'articles sélectionnés</li>
+                                    <li>le prix total HT = (article*quantité)+service</li>
+                                    <li>et la commande à laquelle elle est associée</li>
+                                </ul>
+                            </li>
+                            <li>La modification, la suppression et l'ajout sont possibles.</li>
+                        </ul>
                     </br>
                         <p>Les formulaires de création permettent aux employés de prendre également des commandes sur place au magasin.</p>
                     </div>
@@ -264,11 +270,12 @@
                         <h5>DESCRIPTIF</h5>
                         <p>Seuls les utilisateurs ayant le rôle "SUPERADMIN" ont accès à cette partie.</p>
                         <p>L'ajout, la modification, la suppression et la lecture (CRUD) sont possibles pour les éléments suivants :</p>
-                        <li>les prestations,</li>
-                        <li>les articles,</li>
-                        <li>les catégories d'article,</li>
-                        <li>les matières proposées.</li>
-                    </br>
+                        <ul>
+                            <li>les prestations,</li>
+                            <li>les articles,</li>
+                            <li>les catégories d'article,</li>
+                            <li>les matières proposées.</li>
+                        </ul>
                         <p>Chaque ajout d'un nouvel élément sera disponible automatiquement dans la partie client (NG_Pressing).</p>
                     </div>
                     <div class="mb-3">
