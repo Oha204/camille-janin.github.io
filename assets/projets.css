@@ -4,6 +4,10 @@ html body {
     background-color: rgb(2, 2, 20);
 }
 
+body {
+    overflow-x: hidden; /* Masquer le débordement horizontal */
+}
+
 .titleh3-1 {
     font-size: 20px;
     margin-bottom: 0px;
