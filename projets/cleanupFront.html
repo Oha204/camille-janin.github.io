@@ -193,10 +193,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3 order-2 order-md-1">
                             <img src="../assets/images/projets/cleanupFront/homeFull.png" class="img-fluid">
                         </div>
-                        <div class="col-md-4 text-dark custTxtModal text-white">
+                        <div class="col-md-4 text-dark custTxtModal text-white order-1 order-md-2">
                             <h5>DESCRIPTIF</h5>
                             <p>Présentation de :</p>
                             <ul>
@@ -223,21 +223,19 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3 order-2 order-md-1">
                             <img src="../assets/images/projets/cleanupFront/prestationsFull.png" class="img-fluid">
                         </div>
-                        <div class="col-md-4 text-dark custTxtModal text-white">
+                        <div class="col-md-4 text-dark custTxtModal text-white order-1 order-md-2">
                             <h5>DESCRIPTIF</h5>
                             <p>Les prestations disponibles :</p>
                             <ul>
                                 <li>Les services affichés sont appelés de manière dynamique via la base de données. Ainsi, si une prestation est ajoutée ou supprimée, alors ce bloc se mettra à jour automatiquement.</li>
                             </ul>
-                        </br>
                             <p>Les prix chez Clean Up' :</p>
                             <ul>
                                 <li>Récupération en base de données et affichage des prix des services, ainsi que des suppléments liés aux articles et aux matières.</li>
                             </ul>
-                        </br>
                             <p>Le simulateur :</p>
                             <ul>
                                 <li>Permets aux utilisateurs de sélectionner un service, le type d'article concerné, ainsi que sa quantité, et la matière. En cliquant sur le bouton "Simuler", le prix total de la prestation s'affiche.</li>
@@ -259,16 +257,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center mb-3 order-2 order-md-1">
                             <img src="../assets/images/projets/cleanupFront/aboutFull.png" class="img-fluid">
                         </div>
-                        <div class="col-md-4 text-dark custTxtModal text-white">
+                        <div class="col-md-4 text-dark custTxtModal text-white order-1 order-md-2">
                             <h5>DESCRIPTIF</h5>
                             <p>Partie "Qui sommes-nous ?" :</p>
                             <ul>
                                 <li>Présentation de Clean Up'.</li>
                             </ul>
-                        </br>
                             <p>Partie "Valeurs et engagements" :</p>
                             <ul>
                                 <li>Présentation des valeurs et des engagements de l'entreprise.</li>
@@ -298,41 +295,41 @@
     </div>
 
     <!-- Modal login/inscription -->
-<div class="modal fade" id="modalLoginInscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content" id="bgColorModal">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULAIRE DE CONNEXION / INSCRIPTION</h1>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="d-flex flex-column">
-                            <img src="../assets/images/projets/cleanupFront/inscription.png" class="img-fluid mb-3">
-                            <img src="../assets/images/projets/cleanupFront/loginFull.png" class="img-fluid mb-3">
+    <div class="modal fade" id="modalLoginInscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content" id="bgColorModal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULAIRE DE CONNEXION / INSCRIPTION</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 order-2 order-md-1">
+                            <div class="d-flex flex-column">
+                                <img src="../assets/images/projets/cleanupFront/inscription.png" class="img-fluid mb-3">
+                                <img src="../assets/images/projets/cleanupFront/loginFull.png" class="img-fluid mb-3">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 text-dark custTxtModal text-white">
-                        <h5>DESCRIPTIF</h5>
-                        <p>Formulaire d'INSCRIPTION :</p>
-                        <p>Certaines conditions sont nécessaires pour valider le formulaire :</p>
-                        <ul>
-                            <li>Le format email est obligatoire (regex),</li>
-                            <li>Le mot de passe doit contenir X caractères minimum,</li>
-                            <li>Le mot de passe et la vérification du mot de passe doivent être identiques.</li>
-                        </ul>
-                        <p>Lorsque l'inscription est prise en compte et envoyée en base de données, le mot de passe est hashé.</p>
-                        <p>Formulaire de CONNEXION :</p>
-                        <ul>
-                            <li>Après l'inscription, notre utilisateur peut se connecter. Un jeton d'authentification lui sera attribué.</li>
-                        </ul>
+                        <div class="col-md-4 order-1 order-md-2 text-dark custTxtModal text-white ">
+                            <h5>DESCRIPTIF</h5>
+                            <p>Formulaire d'INSCRIPTION :</p>
+                            <p>Certaines conditions sont nécessaires pour valider le formulaire :</p>
+                            <ul>
+                                <li>Le format email est obligatoire (regex),</li>
+                                <li>Le mot de passe doit contenir X caractères minimum,</li>
+                                <li>Le mot de passe et la vérification du mot de passe doivent être identiques.</li>
+                            </ul>
+                            <p>Lorsque l'inscription est prise en compte et envoyée en base de données, le mot de passe est hashé.</p>
+                            <p>Formulaire de CONNEXION :</p>
+                            <ul>
+                                <li>Après l'inscription, notre utilisateur peut se connecter. Un jeton d'authentification lui sera attribué.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Modal Commande -->
     <div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -344,7 +341,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8 order-2 order-md-1">
                             <div class="d-flex flex-column">
                                 <img src="../assets/images/projets/cleanupFront/orderFull.png" class="img-fluid mb-2">
                                 <img src="../assets/images/projets/cleanupFront/orderDateFull.png" class="img-fluid mb-2">
@@ -353,7 +350,7 @@
                                 <img src="../assets/images/projets/cleanupFront/orderValidFull.png" class="img-fluid mb-2">
                             </div>
                         </div>
-                        <div class="col-md-4 text-dark custTxtModal text-white">
+                        <div class="col-md-4 order-1 order-md-2 text-dark custTxtModal text-white">
                             <h5>DESCRIPTIF</h5>
                             <p>Étape 1 - Passez votre commande :</p>
                             <ul>
@@ -395,7 +392,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8 order-2 order-md-1">
                             <div class="d-flex flex-column">
                                 <img src="../assets/images/projets/cleanupFront/espaceClientDashFull.png" class="img-fluid mb-3">
                                 <img src="../assets/images/projets/cleanupFront/espaceClientFull.png" class="img-fluid mb-3">
@@ -404,7 +401,7 @@
                                 <img src="../assets/images/projets/cleanupFront/espaceClientOrderDetailFull.png" class="img-fluid mb-3">
                             </div>
                         </div>
-                        <div class="col-md-4 text-dark custTxtModal text-white">
+                        <div class="col-md-4 order-1 order-md-2 text-dark custTxtModal text-white">
                             <h5>DESCRIPTIF</h5>
                             <p>Tableau de bord :</p>
                             <ul>
